@@ -161,3 +161,16 @@ font-variation-settings: "GRVT" 1000, "YEST" 600;
   position: relative;
 }
 
+@media (max-width:768px){
+  .index {
+      grid-template-columns: 1fr;
+      grid-auto-rows: auto;
+      margin-left: 5px;
+      margin-right: 5px;
+  }
+.header-title{
+  position: static;
+  height: auto;
+}
+
+}
