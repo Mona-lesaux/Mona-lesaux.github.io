@@ -1,0 +1,161 @@
+body{
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+h1{
+    font-family: "motiva-sans", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 14px;
+  }
+  
+
+h2{
+    font-family: "cy-text", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 15px;
+    
+  }
+  
+  .h3 {
+  font-family: "cheee-variable", sans-serif;
+  font-variation-settings: "GRVT" 0, "YEST" 400;
+  font-size: 27px;
+  
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+  
+  
+  .h3:hover {
+  font-family: "cheee-variable", sans-serif;
+  font-variation-settings: "GRVT" 1000, "YEST" 600;
+    font-size: 27px;
+    transition: font-weight 0.6s ease; 
+    text-decoration: none;
+  }
+  
+  .h6 {
+    font-family: "motiva-sans", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 27px;
+    
+  }
+
+  p{
+    font-family: "motiva-sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+  }
+h4{
+    font-family: "motiva-sans", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 30px;
+
+}
+
+h5{
+    font-family: "motiva-sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;}
+.header-title{
+  background: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: start;
+  position: sticky;
+  top: 0;
+  width: auto;
+  align-items: baseline;
+  border-bottom: 1px solid black;
+  margin-bottom: 60px;
+  padding-bottom: 60px;
+ 
+}
+    
+.index{
+    text-decoration: none;
+}
+
+.index .grid{
+    display: grid;
+    max-width:  1280px;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+
+.item{
+    display:grid;
+    width:auto-fit; 
+    background: #000;
+  
+  
+  }
+  
+  .item>*{
+    grid-column: 1;
+    grid-row:1;
+    justify-self:center;
+    align-self:center;
+    color:#fff;
+    transition:2s;
+  }
+  
+
+ .projet-long{
+  grid-row: span 2;
+ }
+ 
+.projet-large {
+    grid-column: span 2;
+}
+
+.expl {
+    border-bottom: 1px solid black;
+  margin-bottom: 0px;
+  padding-bottom: 45px
+}
+.tooltip {
+    visibility: hidden; /* L'infobulle est invisible par défaut */
+    position: absolute;
+    background-color: #ffffff; /* Couleur de fond de l'infobulle */
+    color: #000000; /* Couleur du texte de l'infobulle */
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 14px;
+    top: 100%; /* Place l'infobulle au-dessus du texte */
+    right: 120%;
+    transform: translateX(-50%);
+    opacity: 0; /* Rendre l'infobulle invisible par défaut */
+    transition: opacity 0.3s ease, visibility 0s linear 0.3s; /* Animation douce */
+    font-size: 12px;
+    
+    
+  }
+  
+  
+  /* Afficher l'infobulle au survol du texte */
+  .texte:hover .tooltip {
+    visibility: visible; /* Rendre l'infobulle visible */
+    opacity: 1; /* L'infobulle devient complètement opaque */
+    transition: opacity 0.3s ease; /* Transition douce */
+    position: relative;
+  }

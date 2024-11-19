@@ -7,8 +7,47 @@ img{
     height: auto;
 }
 h1{
-    font-size: 16px;
+  font-family: "motiva-sans", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 14px;
 }
+
+
+h2{
+  font-family: "cy-text", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 15px;
+}
+
+.h3 {
+font-family: "cheee-variable", sans-serif;
+font-variation-settings: "GRVT" 0, "YEST" 400;
+font-size: 27px;}
+
+
+.h3:hover {
+font-family: "cheee-variable", sans-serif;
+font-variation-settings: "GRVT" 1000, "YEST" 600;
+  font-size: 27px;
+  transition: font-weight 0.6s ease;
+}
+
+.h6 {
+  font-family: "motiva-sans", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 27px;
+  
+}
+.p{
+  font-family: "motiva-sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 14px;
+}
+
 
 .header-title{
   background: #fff;
@@ -49,19 +88,76 @@ h1{
     justify-self:center;
     align-self:center;
     color:#fff;
-    transition:2s;
+    transition:1s;
   }
-  .item p{
-    font-size: 34px;
+  .item h2{
+    font-size: 24px;
     opacity:0;
   }
   .item:hover img{
     opacity:0;
   }
-  .item:hover p{
+  .item:hover h2{
     opacity:1;
   }
   
+  .item2{
+    display:grid;
+    width:auto-fit; 
+    background: #ffffff;
+    text-decoration: none;
+  
+  }
+  
+  .item2>*{
+    grid-column: 1;
+    grid-row:1;
+    justify-self:center;
+    align-self:center;
+    color:#000000;
+    transition:1s;
+  }
+  .item2 h2{
+    font-size: 24px;
+    opacity:0;
+  }
+  .item2:hover img{
+    opacity:0;
+  }
+  .item2:hover h2{
+    opacity:1;
+  }
+
  .projet-long{
   grid-row: span 2;
  }
+ 
+
+ 
+ .tooltip {
+  visibility: hidden; /* L'infobulle est invisible par défaut */
+  position: absolute;
+  background-color: #ffffff; /* Couleur de fond de l'infobulle */
+  color: #000000; /* Couleur du texte de l'infobulle */
+  padding: 5px;
+  border-radius: 20px;
+  font-size: 14px;
+  top: 100%; /* Place l'infobulle au-dessus du texte */
+  right: 120%;
+  transform: translateX(-50%);
+  opacity: 0; /* Rendre l'infobulle invisible par défaut */
+  transition: opacity 0.3s ease, visibility 0s linear 0.3s; /* Animation douce */
+  font-size: 12px;
+  
+  
+}
+
+
+/* Afficher l'infobulle au survol du texte */
+.texte:hover .tooltip {
+  visibility: visible; /* Rendre l'infobulle visible */
+  opacity: 1; /* L'infobulle devient complètement opaque */
+  transition: opacity 0.3s ease; /* Transition douce */
+  position: relative;
+}
+
